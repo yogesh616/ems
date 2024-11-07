@@ -1,0 +1,82 @@
+/* Overall background styling for the login page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6; /* light gray background */
+  }
+  
+  /* Styling for the login form */
+  .login-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.75rem; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%;
+    max-width: 28rem; /* Medium-sized form */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Spacing between elements */
+  }
+  
+  /* Title styling */
+  .login-form h2 {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 600; /* font-semibold */
+    text-align: center;
+    color: #2d3748; /* Dark gray text */
+  }
+  
+  /* Input field common styling */
+  .input-field {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db; /* Gray border */
+    border-radius: 0.375rem; /* Rounded corners */
+    font-size: 1rem; /* Standard font size */
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Input focus state */
+  .input-field:focus {
+    border-color: #3b82f6; /* Blue border on focus */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); /* Blue shadow */
+  }
+  
+  /* Button styling */
+  .submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3b82f6; /* Blue background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 0.375rem; /* Rounded corners */
+    font-size: 1rem;
+    font-weight: 600; /* font-semibold */
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  /* Button hover effect */
+  .submit-btn:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .login-form {
+      padding: 1.5rem;
+    }
+  
+    .login-form h2 {
+      font-size: 1.5rem; /* Smaller title on smaller screens */
+    }
+  
+    .input-field,
+    .submit-btn {
+      font-size: 0.875rem; /* Slightly smaller inputs and button */
+    }
+  }
+  
